@@ -1,0 +1,163 @@
+#####MATPLOTLIB#####
+---------------------
+import matplotlib.pyplot as plt
+
+plt.plot([1,2,3],[5,7,4])
+
+plt.show()
+#now run
+###############################
+---------------------------------------
+_________________________________
+import matplotlib.pyplot as plt
+
+x=[1,2,3]
+y=[5,7,4]
+
+x2=[1,2,3]
+y2=[10,14,12]
+
+plt.plot(x,y,label='Fisrt line')
+plt.plot(x2,y2,label='Second line')
+plt.xlabel('PLot Number')
+plt.ylabel('Interesting var')
+
+plt.title('Interesting Graph\nCheck it out')
+
+plt.legend()
+plt.show()
+
+##################################################
+--------------------------------------------------
+__________________________________________________
+
+import matplotlib.pyplot as plt
+
+x=[2,4,6,8]
+y=[6,7,8,2,4]
+
+x2=[1,3,5,9,11]
+y2=[7,8,2,4,2]
+
+population_ages=[22,55,62,45,21,22,34,44,42,53,3,45,56,122,24,45,65,110,17,100,106]
+#ids=[x for x in range(len population_ages)]
+
+bins=[0,10,20,30,40,50,60,70,80,90,100,120,130]
+
+plt.hist(population_ages,bins,histtype='bar',rwidth=0.8)
+
+
+
+##plt.bar(x,y,label='Bar1',colour='r')
+##plt.bar(x,y,label='Bar2',colour='c')
+
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Interesting Graph\nCheck it out')
+plt.legend()
+plt.show()
+
+################################################
+------------------------------------------------
+________________________________________________
+import matplotlib.pyplot as plt
+
+x=[1,2,3,4,5,6,7,8]
+y=[5,4,6,2,8,20,12,23]
+
+plt.scatter(x,y,label='skitscat',color='k',marker='*',s=100)
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Interesting Graph\nCheck it out')
+plt.legend()
+plt.show()
+
+###########################################################
+-----------------------------------------------------------
+___________________________________________________________
+import matplotlib.pyplot as plt
+
+days=[1,2,3,4,5]
+
+sleeping=[7,8,6,11,7]
+eating=[2,3,4,3,2]
+working=[7,8,7,2,2]
+playing=[8,5,7,8,13]
+
+
+plt.plot([],[],color='m',label='Sleeping',linewidth=5)
+plt.plot([],[],color='r',label='Working',linewidth=5)
+plt.plot([],[],color='c',label='Eating',linewidth=5)
+plt.plot([],[],color='k',label='Playing',linewidth=5)
+
+
+
+plt.stackplot(days,sleeping,eating,working,playing,colors=['m','r','c','k'])
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Interesting Graph\nCheck it out')
+plt.legend()
+plt.show()
+
+#############################################################################
+-----------------------------------------------------------------------------
+_____________________________________________________________________________
+import matplotlib.pyplot as plt
+
+days=[1,2,3,4,5]
+
+
+sleeping=[7,8,6,11,7]
+eating=[2,3,4,3,2]
+working=[7,8,7,2,2]
+playing=[8,5,7,8,13]
+
+slices=[7,2,2,13]
+activites=['sleeping','eating','working','playing']
+cols=['m','r','c','b']
+plt.pie(slices,
+	 labels=activities,
+	 colors=cols,
+	 startangle=90,
+	 shadow=True,
+	 explode=(0.0.1,0,0),
+	 autopot='1.1f%%')
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Interesting Graph\nCheck it out')
+plt.legend()
+plt.show()
+
+##############################################
+----------------------------------------------
+______________________________________________
+import matplotlib.pyplot as plt
+
+days=[1,2,3,4,5]
+
+
+sleeping=[7,8,6,11,7]
+eating=[2,3,4,3,2]
+working=[7,8,7,2,2]
+playing=[8,5,7,8,13]
+
+slices=[7,2,2,13]
+activites=['sleeping','eating','working','playing']
+cols=['m','r','c','b']
+plt.pie(slices,
+	 labels=activities,
+	 colors=cols,
+	 startangle=90,
+	 shadow=True,
+	 explode=(0.0.1,0,0),
+	 autopot='1.1f%%')
+
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Interesting Graph\nCheck it out')
+plt.legend()
+plt.show()
+
